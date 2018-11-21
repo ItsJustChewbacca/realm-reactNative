@@ -33,6 +33,22 @@ export class LoginForm extends Component {
     this.setState({ isModalVisible: true });
   }
 }
+handleSubmit = async nickname => {
+  try {
+    // Reset any previous errors that might have happened
+    this.setState({ error: undefined });
+    // Attempt to authenticate towards the server
+    const user = await Realm.Sync.User.registerWithProvider(SERVER_URL, {
+      provider: "nickname",
+      providerToken: nickname
+    });
+    // Hide the modal
+    this.setState({ isModalVisible: false });
+    this.onAuthenticated(user);
+  } catch (error) {
+    this.setState({ isModalVisible: true, error });
+  }
+}
   
   render() {
      // Show the modal if the user is not authenticated
