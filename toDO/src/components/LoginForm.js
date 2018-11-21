@@ -35,5 +35,26 @@ export class LoginForm extends Component {
 }
   
   render() {
+     // Show the modal if the user is not authenticated
+  const isAuthenticated = !!Realm.Sync.User.current;
+  
+  return (
+    <View style={styles.container}>
+      <ModalView
+        placeholder="Please Enter a Username"
+        confirmLabel="Login"
+        isModalVisible={!isAuthenticated}
+        handleSubmit={this.handleSubmit}
+        error={this.state.error}
+      />
+      {isAuthenticated && (
+        <View style={styles.buttons}>
+          <Button onPress={this.onLogout}>Logout</Button>
+          <Button onPress={this.onOpenProjects}>Go to projects</Button>
+        </View>
+      )}
+    </View>
+  );
+
   }
 }
