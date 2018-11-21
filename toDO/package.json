@@ -11,6 +11,7 @@
     "react-native": "0.57.5",
     "react-native-elements": "^0.19.1",
     "react-native-modal": "^7.0.0",
+    "react-native-router-flux": "^4.0.0-beta.31",
     "react-native-vector-icons": "^6.1.0",
     "realm": "^2.19.1"
   },
