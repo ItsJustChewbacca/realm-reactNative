@@ -49,6 +49,16 @@ handleSubmit = async nickname => {
     this.setState({ isModalVisible: true, error });
   }
 }
+onAuthenticated(user) {
+  // Create a configuration to open the default Realm
+  const config = user.createConfiguration({
+    schema: [Project, Item]
+  });
+  // Open the Realm
+  const realm = new Realm(config);
+  // Navigate to the main scene
+  Actions.authenticated({ user, realm });
+}
   
   render() {
      // Show the modal if the user is not authenticated
