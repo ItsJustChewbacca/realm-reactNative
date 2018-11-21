@@ -3,9 +3,7 @@ import React, { Component } from "react";
 import { View, Text, TextInput } from "react-native";
 import Modal from "react-native-modal";
 import { StyleSheet } from "react-native";
-​
 const white = "white";
-​
 const styles = StyleSheet.create({
   content: {
     flexDirection: "column",
@@ -24,14 +22,11 @@ const styles = StyleSheet.create({
     marginTop: 10
   }
 });
-​
 //component will be added later
 import { Button } from "./Button";
-​
 //...
 //import statements and stylesheet
 //...
-​
 export class ModalView extends Component {
   static propTypes = {
     confirmLabel: PropTypes.string,
@@ -41,18 +36,15 @@ export class ModalView extends Component {
     placeholder: PropTypes.string,
     toggleModal: PropTypes.func
   };
-  
   state = {
     text: ""
   };
-  
   componentDidUpdate(prevProps) {
     // Reset the text state when the modal becomes visible
     if (!prevProps.isModalVisible && this.props.isModalVisible) {
       this.setState({ text: "" });
     }
   }
-  
   render() {
     const {
       confirmLabel,
@@ -61,7 +53,6 @@ export class ModalView extends Component {
       placeholder,
       toggleModal
     } = this.props;
-    
     return (
       <Modal isVisible={isModalVisible}>
         <View style={styles.content}>
@@ -84,11 +75,9 @@ export class ModalView extends Component {
       </Modal>
     );
   }
-  
   onChangeText = text => {
     this.setState({ text });
   };
-  
   onConfirm = () => {
     this.props.handleSubmit(this.state.text);
   };

@@ -9,7 +9,6 @@ export const Project = {
     items: "Item[]"
   }
 };
-​
 export const Item = {
   name: "Item",
   primaryKey: "itemId",
