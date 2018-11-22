@@ -28,11 +28,11 @@ These instructions will get you a copy of the project up and running on your loc
 
 What things you need to install the software and how to install them
 
-​Xcode 9.0 or later.
+​1. Xcode 9.0 or later.
 
-An environment set up to run React Native applications. If you don't have that, please follow the [React Native instructions](https://facebook.github.io/react-native/docs/getting-started.html) to set up your environment before you do more here.
+2. An environment set up to run React Native applications. If you don't have that, please follow the [React Native instructions](https://facebook.github.io/react-native/docs/getting-started.html) to set up your environment before you do more here.
 
-​[React Native CLI​](https://facebook.github.io/react-native/docs/getting-started.html#the-react-native-cli)
+​3. [React Native CLI​](https://facebook.github.io/react-native/docs/getting-started.html#the-react-native-cli)
 
-TheURL of your Realm Cloud instance (you can get it by logging in to the cloud portal and clicking the Copy Instance URL link).
+4. TheURL of your Realm Cloud instance (you can get it by logging in to the cloud portal and clicking the Copy Instance URL link).
 
