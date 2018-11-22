@@ -5,7 +5,7 @@ Realm backend instance to make query based syncs utilizing real time react-nativ
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
- 1. Clone this repo - https://github.com/ItsJustChewbacca/React-Redux.git
+ 1. Clone this repo - https://github.com/ItsJustChewbacca/realm-reactNative.git
  2. Create Realm Cloud Instance
 	- Change the `MY_INSTANCE_ADDRESS` in constants.js to your Realm Cloud instance URL.
 
