@@ -23,7 +23,6 @@ These instructions will get you a copy of the project up and running on your loc
  6. Run `Npm Start` in main directory
  7. Open Xcode application - Navigate to the project directory > `ios` and open `ToDo.xcodeproj`. Start the new application by selecting a simulator and clicking Build/Run icon.
  8. Make sure the ios simulator is runnning iOS9
-```
 
 ### Prerequisites
 
